@@ -1,37 +1,118 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Reciept Generation Page</title>
-        
-        <style>
-            body{
-                background-color: #eeeee4;
-            }
-            .reciept_container{
-                width: 80%;
-                border: 1px solid gray;
-                margin: 0 auto;
-                background-color: white;
-                border-radius: 2px;
-                padding: 10px;
-                box-shadow:0 0 10px  rgba(0, 0, 0, 0.2);
-        
-            .brand_logo{
-                width: 100px;
-                display: block;
-                margin: 0 auto;
-            }
-            .brand_title{
-                text-align: center;
-            }
 
- 
-        </style>
-    </head>
-    <body>
-        <div class="reciept_container">
-        <img src="./Images/logo_rtc.png" alt="RTC logo" class="brand_logo"/>
-        <h2 class="brand_title">Road To Code</h2>
+<head>
+    <title>Reciept Generation Page</title>
+
+    <style>
+        body {
+            background-color: #eeeee4;
+        }
+
+        .reciept_container {
+            width: 80%;
+            border: 1px solid gray;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 2px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .reciept_header {
+            border-bottom: 1px dashed gray;
+        }
+
+        .brand_logo {
+            width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .brand_title {
+            text-align: center;
+        }
+
+        .brand_address {
+            text-align: right;
+        }
+
+        .reciept_detail {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .reciept_detail_key {
+            color: gray;
+            width: 30%;
+        }
+
+        .reciept_detail_value {
+            font-weight: bold;
+            border-bottom: 1px dashed gray;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reciept_container">
+
+        <div class="reciept_header">
+            <img src="./Images/logo_rtc.png" alt="RTC logo" class="brand_logo" />
+            <h2 class="brand_title">Road To Code</h2>
+            <p class="brand_address">404,Above Lotus Hospital, <br />ShewalWadi, Hadapsar <br />
+                Pune-412307</p><br />
+            <p>+917778887676</p>
+        </div>
+
+
+        <div class="reciept_body">
+            <h3 class="brand_title">Payment Invoice</h3>
+            <br />
+            <div class="reciept_detail">
+                <div class="reciept_detail_key">Reciept No :</div>
+                <div class="reciept_detail_value">345678</div>
+            </div>
+
+            <div class="reciept_detail">
+                <div class="reciept_detail_key">Reciept No :</div>
+                <div class="reciept_detail_value">345678</div>
+            </div>
+
+
+            <div class="reciept_detail">
+                <div class="reciept_detail_key">Name :</div>
+                <div class="reciept_detail_value">Komal Awagan</div>
+            </div>
+
+            <div class="reciept_detail">
+                <div class="reciept_detail_key">Payment Date :</div>
+                <div class="reciept_detail_value">01/01/2024</div>
+            </div>
+
+            <div class="reciept_detail">
+                <div class="reciept_detail_key">Amount :</div>
+                <div class="reciept_detail_value">2000/-</div>
+            </div>
+
+            <div class="reciept_detail">
+                <div class="reciept_detail_key">Method Of Payment :</div>
+                <div class="reciept_detail_value">UPI-Online</div>
+            </div>
+
+            <p>Accountant Signature</p>
+
+
+        </div>
+
+        <div class="reciept_footer">
+
+
+        </div>
     </div>
-    </body>
+</body>
+
 </html>
