@@ -16,6 +16,7 @@
             background-color: white;
             border-radius: 2px;
             padding: 10px;
+            padding-bottom: 0px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
@@ -24,7 +25,7 @@
         }
 
         .brand_logo {
-            width: 100px;
+            width: 150px;
             display: block;
             margin: 0 auto;
         }
@@ -70,6 +71,12 @@
             text-align: right;
             margin-top: 130px;
         }
+        .reciept_footer{
+               background-color: rgb(243, 117, 13);
+               margin: 0px;
+               padding: 2px;
+               
+        }
     </style>
 </head>
 
@@ -77,9 +84,9 @@
     <div class="reciept_container">
 
         <div class="reciept_header">
-            <img src="./Images/logo_rtc.png" alt="RTC logo" class="brand_logo" />
-            <h2 class="brand_title">Road To Code</h2>
-            <p class="brand_address">404,Above Lotus Hospital, <br />ShewalWadi, Hadapsar <br />
+            <img src="./Images/indian_food_logo.png" alt="RTC logo" class="brand_logo" />
+            <h2 class="brand_title">Indian Food Restaurant</h2>
+            <p class="brand_address">404,Near KSF Hospital, <br />ShewalWadi, Hadapsar <br />
                 Pune-412307</p>
             <p class="brand_address">+917778887676</p>
         </div>
@@ -94,12 +101,6 @@
             </div>
 
             <div class="reciept_detail">
-                <div class="reciept_detail_key">Reciept No :</div>
-                <div class="reciept_detail_value">345678</div>
-            </div>
-
-
-            <div class="reciept_detail">
                 <div class="reciept_detail_key">Name :</div>
                 <div class="reciept_detail_value">Komal Awagan</div>
             </div>
@@ -110,8 +111,13 @@
             </div>
 
             <div class="reciept_detail">
+                <div class="reciept_detail_key">Dish Name :</div>
+                <div class="reciept_detail_value">1 Veg thali</div>
+            </div>
+
+            <div class="reciept_detail">
                 <div class="reciept_detail_key">Amount :</div>
-                <div class="reciept_detail_value">2000/-</div>
+                <div class="reciept_detail_value">250/-</div>
             </div>
 
             <div class="reciept_detail">
@@ -123,11 +129,10 @@
 
 
         </div>
-        <br/>
+        <p>This is computer genrated reciept and  does not require any signature</p>
 
         <div class="reciept_footer">
-         
-
+         <p class="brand_title ">Thank you  for your payment</p>
         </div>
     </div>
 </body>
