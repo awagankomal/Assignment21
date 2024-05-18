@@ -3,6 +3,7 @@
 
 <head>
     <title>Reciept Generation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
@@ -36,9 +37,10 @@
 
         .brand_address {
             text-align: right;
-            
+
         }
-        .reciept_body{
+
+        .reciept_body {
             position: relative;
             border-bottom: 1px dashed gray;
         }
@@ -60,22 +62,61 @@
             border-bottom: 1px dashed gray;
             width: 30%;
         }
-        .stamp{
+
+        .stamp {
             width: 100px;
             position: absolute;
             right: 20px;
             bottom: 33px;
             transform: rotate(-10deg);
         }
-        .signature{
+
+        .signature {
             text-align: right;
             margin-top: 130px;
         }
-        .reciept_footer{
-               background-color: rgb(243, 117, 13);
-               margin: 0px;
-               padding: 2px;
-               
+
+        .reciept_footer {
+            background-color: rgb(243, 117, 13);
+            margin: 0px;
+            padding: 2px;
+
+        }
+
+        /* Mobile Devices */
+
+        @media screen and (min-width: 400px) and (max-width: 768px) {
+
+            .reciept_container {
+                padding: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+            }
+
+            .brand_logo {
+                width: 130px;
+            }
+
+            .brand_title {
+                font-size: 20px;
+            }
+
+            .brand_address {
+
+                font-size: 15px;
+            }
+
+            .reciept_detail {
+
+                font-size: 15px;
+
+            }
+            .reciept_footer {
+           
+            padding: 1px;
+
+        }
+
         }
     </style>
 </head>
@@ -124,15 +165,15 @@
                 <div class="reciept_detail_key">Method Of Payment :</div>
                 <div class="reciept_detail_value">UPI-Online</div>
             </div>
-            <img src="Images/signe.PNG" alt="stamp here" class="stamp"/>
+            <img src="Images/signe.PNG" alt="stamp here" class="stamp" />
             <p class="signature">Accountant Signature</p>
 
 
         </div>
-        <p>This is computer genrated reciept and  does not require any signature</p>
+        <p>This is computer genrated reciept and does not require any signature</p>
 
         <div class="reciept_footer">
-         <p class="brand_title ">Thank you  for your payment</p>
+            <p class="brand_title ">Thank you for your payment</p>
         </div>
     </div>
 </body>
